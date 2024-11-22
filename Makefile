@@ -3,7 +3,7 @@
 export SSH_PUB_KEY := $(shell cat ./live.pub)
 
 dep:
-	npm install
+	go mod tidy
 
 bootstrap:
 	cdk bootstrap
